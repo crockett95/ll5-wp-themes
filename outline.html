@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Load MathJax for math display -->
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
+  <title></title>
+</head>
+<body>
+<div class="container">
+
+<h1>WordPress Themes 101</h1>
+
+<h2>About Themes</h2>
+
+<p>Themes are the basic presentational packages for WordPress. They include:</p>
+
+<ul>
+<li>
+<p>Templates</p>
+</li><li>
+<p>Styles</p>
+</li><li>
+<p>Basic Javascript</p>
+</li><li>
+<p>Supporting PHP functions</p>
+</li>
+</ul>
+
+<h2>Types of Themes</h2>
+
+<p>There are two types of WordPress themes:</p>
+
+<ul>
+<li>
+<p>Full themes</p>
+</li><li>
+<p>Child Themes</p>
+</li>
+</ul>
+
+<h1>Full Themes</h1>
+
+<h2>Required Files</h2>
+
+<ul>
+<li>
+<p><code>index.php</code></p>
+</li><li>
+<p><code>style.css</code></p>
+</li>
+</ul>
+
+<p>All other theme files add additional functionality.</p>
+
+<h2><code>functions.php</code></h2>
+
+<p>Loaded on every request.</p>
+
+<p>This is where you can add functionality to WordPress surrounding your theme, or load the filed that do that.</p>
+
+<ul>
+<li>
+<p>Image sizes</p>
+</li><li>
+<p>Load scripts &amp; styles</p>
+</li><li>
+<p>Custom headers</p>
+</li>
+</ul>
+
+<h2>Stylesheet: <code>style.css</code></h2>
+
+<p>Contains a header with the theme’s meta information</p>
+
+<pre><code>/*
+Theme Name: Twenty Thirteen
+Theme URI: http://wordpress.org/themes/twentythirteen
+Author: the WordPress team
+Author URI: http://wordpress.org/
+Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: twentythirteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+</code></pre>
+
+<h2>Other Stuff</h2>
+
+<ul>
+<li>
+<p>JavaScript</p>
+</li><li>
+<p>Images</p>
+</li>
+</ul>
+
+<h1>Templates</h1>
+
+<h2>Template Hierarchy</h2>
+
+<p>How WordPress loads templates based on what’s available:</p>
+
+<ul>
+<li>
+<p>Based on the type of request</p>
+</li><li>
+<p>First matching template wins</p>
+</li><li>
+<p>Specific to general</p>
+</li><li>
+<p>Final default is always <code>index.php</code></p>
+</li>
+</ul>
+
+<p><a href="http://codex.wordpress.org/Template_Hierarchy">The WordPress Template Hierarchy</a></p>
+
+<h2>Other Template Parts</h2>
+
+<ul>
+<li>
+<p><code>header.php</code></p>
+</li><li>
+<p><code>footer.php</code></p>
+</li><li>
+<p><code>sidebar.php</code></p>
+</li><li>
+<p><code>comments.php</code></p>
+</li><li>
+<p><code>searchform.php</code></p>
+</li>
+</ul>
+
+<h1>Child Themes</h1>
+
+<h2>What is a Child Theme?</h2>
+
+<p>Child themes override parts of a parent theme, to build on and customize it to their needs.</p>
+
+<ul>
+<li>
+<p>styles</p>
+</li><li>
+<p>templates (usually header, footer)</p>
+</li><li>
+<p><code>functions.php</code> - loaded in addition to parent theme</p>
+</li>
+</ul>
+
+<p>The only required file for a child theme is <code>style.css</code>.</p>
+
+<h1>Starter Themes</h1>
+
+<h2>What’s a starter theme?</h2>
+
+<p>Starter themes are prebuilt, bare themes that provide a starting ground for building a custom WordPress theme:</p>
+
+<ul>
+<li>
+<p>Very few styles</p>
+</li><li>
+<p>Basic templates</p>
+</li><li>
+<p>Helper functions</p>
+</li>
+</ul>
+
+<h2>Examples of Starter Themes</h2>
+
+<ul>
+<li>
+<p>_s</p>
+</li><li>
+<p>Roots</p>
+</li><li>
+<p>HTML5 Blank</p>
+</li><li>
+<p>Handcrafted</p>
+</li><li>
+<p>Naked</p>
+</li>
+</ul>
+
+<h1>Exercises</h1>
+
+<h2>Download &amp; Play with a WP Starter Theme</h2>
+
+<p>This is a hard one to give a real exercise for.</p>
+
+
+</div>
+</body>
+</html>
